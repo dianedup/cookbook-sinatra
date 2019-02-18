@@ -1,0 +1,15 @@
+<p>
+  I'm in a <em>view</em>!
+  <br>
+  <%= Time.now %>
+  <br>
+  <ul>
+    <% @recipes.each do |recipe| %>
+      <li>
+        <%= recipe.name %>
+      </li>
+    <% end %>
+  </ul>
+</p>
+<br>
+<a href='/new' target=_blank>Create a new recipe</a>
